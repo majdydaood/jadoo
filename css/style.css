@@ -1,0 +1,1060 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3{
+    font-family: volkhov-regular, OpenSans-Regular;
+}
+
+h2{
+    font-size: 84px;
+    line-height: 89px;
+}
+
+h3{
+    font-size: 50px;
+    line-height: 64px;
+}
+
+h5{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 124.5%;
+    color: #080809;
+}
+
+p, h4,h5, h6, figcaption{
+    font-family: poppins-regular, OpenSans-Regular, sans-serif;
+}
+
+h6{
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #5E6282;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+}
+
+header .logo {
+    float: left;
+    padding: 0;
+}
+
+body > section:not(:first-of-type):not(#sec_4_command){
+    margin-top: 100px;
+}
+
+.clearFx::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header .nav_mobile, header .menu_mobile{
+    display: none;
+}
+
+header .menu_mobile ul{
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav.menu a{
+    font-size: 17px;
+}
+
+nav.menu a:hover{
+    text-decoration: underline;
+}
+
+.logo img.logo_image{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo img.logo_nom{
+    width: 95px;
+    padding-bottom: 3px;
+}
+
+.logo img.logo_image:hover{
+    animation: viberation 0.6s;
+}
+
+@keyframes viberation {
+    25% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(20deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+h4{
+    color: #DF6951;
+}
+
+.button{
+    transition: transform 0.5s;
+}
+
+.button:hover{
+    transform: scale(1.2);
+}
+
+
+
+/*
+* section 1 bienvenue
+*/
+
+#sec_1_bienvenue{
+    background: #fff url("../img/illustration_principale.jpg") no-repeat center center;
+    background-size: cover;
+    padding-bottom: 100px;
+    background-position-y: 25%;
+}
+
+#sec_1_bienvenue h4{
+    padding-top: 225px;
+    padding-bottom: 50px;
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#sec_1_bienvenue h2{
+    color: #fff;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+#sec_1_bienvenue p{
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+ a.button{
+    color: #fff;
+    padding:  15px 35px 15px 35px;
+    background-color: #F1A501;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    width: 200px;
+}
+
+
+
+#sec_1_bienvenue a.button, #sec_2_nouveaute a.button, #sec_4_command a.button{
+    box-shadow: 0px 0px 25px 0px #f1a501;
+}
+
+
+
+.shape_1_souligne{
+   background: url("../img/souligne_rose.svg") no-repeat;
+   width: 320px;
+   height: 20px;
+}
+
+#sec_1_bienvenue .shape_1_souligne{
+    margin-top: -70px;
+}
+
+.container_video{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.container_video img.thumb{
+    width: 340px;
+    border-radius: 25px;
+    
+}
+
+.container_video span.play{
+    position: absolute;
+    top: 155px;
+    left: 130px;
+}
+.container_video span.play img{
+    margin: 2px;
+    border-radius: 50px;
+    background: white;
+    border: 2px solid white;
+}
+
+/*
+* section 2 nouveaute
+*/
+
+#sec_2_nouveaute h6{
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#sec_2_nouveaute h3{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 0px;
+}
+
+#sec_2_nouveaute .plats_grand{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+#sec_2_nouveaute figcaption{
+    color: #5E6282;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 141%;
+    font-weight: 500;
+    color: #5E6282;
+ }
+
+#sec_2_nouveaute .plats_grand figure{
+    padding: 0;
+    width: 29%;
+    float: left;
+    margin: 0 auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    background: white;
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0,.1);
+    border-radius:25px ;
+    overflow: hidden;
+}
+
+#sec_2_nouveaute .plats_grand figure img{
+    width: 100%;
+}
+
+#sec_2_nouveaute .plats_petit{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#sec_2_nouveaute .plats_petit figure{
+    padding: 0;
+    width: 18%;
+    position: relative;
+    flex-direction: column;
+}
+
+#sec_2_nouveaute .plats_petit figure .figtitle{
+    font-family: OpenSans-Regular, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #1E1D4C;
+    
+}
+
+#sec_2_nouveaute .plats_petit figure img{
+    border-top-left-radius:25px ;
+    border-top-right-radius:25px ;
+}
+
+.shape_2_carre{
+    background: url(../img/decor_1.svg) no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+ }
+
+ #sec_2_nouveaute .plats_petit .shape_2_rose{
+     opacity:0;
+     transform: rotate(-90deg);
+     transition: transform 1s, opacity 1s;
+ }
+
+ #sec_2_nouveaute .plats_petit figure.arroundi{
+    border-radius: 50px;
+    background: white;
+    transition:  box-shadow 0.5s;
+}
+
+#sec_2_nouveaute .plats_petit figure.arroundi:hover {
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0,.1);
+}
+
+#sec_2_nouveaute .plats_petit figure.arroundi:hover .shape_2_rose {
+    transform: rotate(0deg);
+    opacity: 1;
+}
+
+
+ .shape_2_filet{
+    width: 10%;
+    position: absolute;
+    right: -3%;
+    top: 30%;
+    z-index: -1;
+ }
+
+ .shape_2_filet img{
+     width: 100%;
+ }
+
+
+ .shape_2_rose{
+    position: absolute;
+    z-index: -1;
+    bottom: -35px;
+    left: -9.5%;
+ }
+
+ #sec_2_nouveaute .btnContainer{
+     margin-top: 100px;
+     text-align: center;
+ }
+
+ #sec_2_nouveaute .button{
+     margin: 0 auto;
+ }
+
+/*
+* section 3 voyage
+*/
+
+#sec_3_voyage{
+    background: #fff url("../img/illustration_chef.jpg") no-repeat top center;
+    background-size: cover;
+    background-position-y: -75px;
+}
+
+#sec_3_voyage .shape_1_souligne{
+    margin-top: 70px;
+    position: absolute;
+}
+
+#sec_3_voyage h2{
+    color: #fff;
+    margin: 0;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#sec_3_voyage p{
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+#sec_3_voyage .voyage_images{
+    margin-top: 10%;
+    width: 65%;
+    margin-bottom: -10%;
+}
+
+#sec_3_voyage .voyage_images img{
+    float: left;
+    width: 50%;
+}
+
+#sec_3_voyage .sec_3_voyage_mobile{
+    display: none;
+}
+
+/*
+* section 4 command
+*/
+
+#sec_4_command h6{
+    margin-bottom: 0;
+}
+
+#sec_4_command h3{
+    margin-top: 0;
+}
+
+#sec_4_command{
+    background: #fff url("../img/illustration_commander.jpg") no-repeat top left;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+#sec_4_command .inred{
+    color: #DF6951;
+}
+
+#sec_4_command .btnContainer {
+    margin-top: 100px;
+}
+
+#sec_4_command img{
+    width: 50px;
+    padding-right: 30px;
+}
+
+#sec_4_command  .container{
+    padding-top: 15%;
+}
+
+#sec_4_command figure{
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+#sec_4_command figure img, #sec_4_command figcaption{
+    float: left;
+}
+
+#sec_4_command figcaption p{
+    margin: 0;
+}
+
+#sec_4_command figcaption .figtitle{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 124.5%;
+    color: #22232C;
+}
+
+/*
+* sec_5_contact
+*/
+
+#sec_5_contact h6{
+    margin-bottom: 0;
+}
+
+#sec_5_contact h3{
+    margin-top: 0;
+}
+
+#sec_5_contact h3, #sec_5_contact h6{
+    text-align: center;
+}
+
+#sec_5_contact .title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+#sec_5_contact p{
+    color: #8D8D8D;
+}
+
+#sec_5_contact .form_container{
+    padding: 10% 10% 0px 10%;
+}
+
+#sec_5_contact .contact_model{
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 25px;
+    background: white;
+    overflow: hidden;
+    filter: drop-shadow(0px 4px 61px rgba(0, 0, 0, 0.1));
+    -webkit-filter: drop-shadow(0px 4px 61px rgba(0, 0, 0, 0.1));
+    display: flex;
+    flex-direction: row;
+}
+
+#sec_5_contact .formulaire, #sec_5_contact .contact_image{
+    width: 50%;
+    flex-direction: column;
+}
+
+#sec_5_contact .contact_image{
+    background-image: url(../img/illustration_formulaire.jpg);
+    background-size: cover;
+}
+
+#sec_5_contact .formulaire label{
+    display: block;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+#sec_5_contact .fullname{
+    margin-top: 5%;
+}
+
+#sec_5_contact .formulaire .fullname span{
+    float: left;
+    width: 50%;
+}
+
+#sec_5_contact .formulaire input:not([type="Submit"]), #sec_5_contact .formulaire textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #CACACA;
+    font-size: 13px;
+    line-height: 28px;
+    padding-top: 15px;
+}
+
+#sec_5_contact .form_container div ~ div:not(.submitBtnContainer){
+    margin-top: 10%;
+}
+
+.submitBtnContainer{
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+a.submitBtn{
+    
+    color: #fff;
+    padding:  15px 30px 15px 30px;
+    background: #007AFF;
+    border-radius: 4px;
+    text-align: center;
+    margin:  0 auto;
+    box-shadow: 0px 0px 25px 0px #007AFF;
+}
+
+a.submitBtn::before{
+    content: "\2713";
+    padding-right: 10px;
+}
+
+
+/*
+* footer
+*/
+
+footer{
+    margin-top: 100px;
+    background-color: #F3F3F3;
+    padding-top: 100px;
+}
+
+footer .container{
+    width: 90%;
+}
+
+footer img{
+    width: 15px;
+}
+
+footer section{
+    float: left;
+    width: 33%;
+}
+
+footer .socket{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    color: #5E6282;
+}
+
+footer ul{
+    text-align: left;
+}
+
+footer .menus .submenu{
+    float: left;
+    width: 50%;
+    
+}
+
+footer .slogon{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 147.5%;
+    color: #5E6282;
+    text-align: left;
+    margin-top: 10px;
+}
+
+footer .menus .submenu div{
+    padding-left: 40px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 124.5%;
+    color: #080809;
+}
+
+footer .menus .submenu ul{
+    padding: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 124.5%;
+    color: #5E6282;
+}
+
+footer .menus .submenu ul li{
+    margin-bottom: 10px;
+}
+
+footer .menus .submenu ul li a{
+    color: #5E6282;
+}
+
+footer .menus .submenu ul li a:hover{
+    text-decoration: underline;
+}
+
+footer img.logo_image{
+    width: 40px;
+    margin-right: 10px;
+}
+
+footer img.logo_nom{
+    width: 95px;
+    padding-bottom: 3px;
+}
+
+footer .apps{
+    margin-top: 25px;
+    display: flex;
+}
+
+footer .uber{
+    width: 200px;
+}
+
+footer .downloadUber{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 124.5%;
+    letter-spacing: 0.005em;
+    color: #5E6282;
+    margin-top: 10px;
+}
+
+footer .googleplay, footer .applestore{
+    background-color: #000;
+    font-size: 10px;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 30px;
+    flex-direction: column;
+}
+
+footer .googleplay a, footer .applestore a{
+    color: white;
+}
+
+footer .apps img{
+    vertical-align: middle;
+}
+
+footer section:last-of-type > div{
+    float: right;
+}
+
+
+@media screen and (max-width: 768px) {
+    header .nav_mobile{
+        display: inline;
+    }
+
+    nav.menu {
+        display: none;
+    }
+
+    nav.menu_mobile {
+        display: inline;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .show{
+        display: block;
+    }
+
+    .nav_mobile .mobile_submenu{
+        width: 100%;
+        position: absolute;
+        background: #F3F3F3;
+        left: 0;
+        height: auto;
+    }
+
+    .nav_mobile .mobile_submenu ul li{
+        padding: 25px 0px 25px 0px;
+    }
+
+    .container{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    header .container{
+        display: flex;
+    }
+
+    header .nav_mobile{
+        flex-direction: column;
+        width: 20%;
+    }
+
+    header .nav_mobile img{
+        width: 40px;
+        margin-top: 10px;
+    }
+
+    header .logo{
+        flex-direction: column;
+        width: 60%;
+        text-align: center;
+    }
+
+    header .menu_mobile{
+        flex-direction: column;
+        width: 20%;
+        text-align: center;
+    }
+
+    #sec_1_bienvenue h4{
+        text-align: center;
+    }
+
+    #sec_1_bienvenue h2{
+        text-align: center;
+    }
+
+    #sec_1_bienvenue p{
+        text-align: center;
+    }
+
+    .shape_1_souligne {
+        margin-left: 100px
+    }
+
+    #sec_3_voyage .shape_1_souligne{
+        display: none;
+    }
+
+    #sec_1_bienvenue .btnContainer{
+        text-align: center;
+    }
+
+    #sec_1_bienvenue .button{
+        margin: 0 auto;
+    }
+
+    .shape_2_carre, .shape_2_filet,.shape_2_rose{
+        display: none;
+    }
+
+    #sec_2_nouveaute .plats_grand figure:first-child{
+        width: 100%;
+    }
+
+    #sec_2_nouveaute .plats_grand figure:not(#sec_2_nouveaute .plats_grand figure:first-child){
+        display: none;
+    }
+
+    #sec_2_nouveaute .plats_petit{
+        width: 100%;
+        
+    }
+
+    #sec_2_nouveaute .plats_petit figure{
+        width: 100%;
+        
+    }
+
+    #sec_2_nouveaute .plats_petit figure img {
+         width: auto;
+         float: left;
+    }
+
+    #sec_2_nouveaute .plats_petit figure.arroundi {
+        box-shadow: none;
+        border-radius: 0px;
+    }
+
+    .container_video{
+        width: 100%;
+    }
+
+    #sec_3_voyage p,#sec_3_voyage h2{
+        display: none;
+    }
+
+    #sec_3_voyage .voyage_images {
+        width: 100%;
+        margin: 0;
+    }
+
+    #sec_3_voyage .voyage_images img {
+        width: 100%;     
+    }
+
+    #sec_3_voyage .container{
+        width: 100%;
+    }
+
+    #sec_3_voyage .container_video{
+        width: 100%;
+        padding: 0;
+    }
+
+    #sec_3_voyage .container_video img.thumb {
+        width: 100%;
+        border-radius: initial;
+        margin-bottom: -5px;
+    }
+
+    #sec_3_voyage{
+        background: none;
+    }
+
+    #sec_3_voyage .sec_3_voyage_mobile{
+        display: block;
+        background: #fff url("../img/illustration_chef.jpg") no-repeat top center;
+        background-size: cover;
+        height: 600px;
+    }
+
+    .container_video span.play {
+        top: 40%;
+        left: 44%;
+    }
+
+    .container_video span.play img {
+         border: none;
+         background: none;
+        filter: brightness(255);
+        -webkit-filter: brightness(255);
+        -moz-filter: brightness(255);
+    }
+
+    #sec_4_command{
+        background: none;
+    }
+
+    #sec_4_command h6, #sec_4_command h3{
+        text-align: center;
+    }
+
+    #sec_4_command .button{
+        margin: 0 auto;
+    }
+
+    #sec_4_command .btnContainer {
+        text-align: center;
+    }
+
+    #sec_5_contact .contact_image, .form_container .title, #sec_5_contact h3 span{
+        display: none;
+    }
+
+    #sec_5_contact h3{
+        margin: 0;
+    }
+
+    #sec_5_contact p{
+        text-align: center;
+    }
+
+    #sec_5_contact .formulaire {
+        width: 100%;
+    }
+
+    #sec_5_contact .contact_model{
+        width: 100%;
+        border-radius: initial;
+        filter: none;
+    }
+
+    #sec_5_contact .form_container {
+        padding: 0% 0% 0px 0%;
+    }
+
+    #sec_5_contact .formulaire .fullname span{
+        width: 100%;
+    }
+
+    #sec_5_contact .formulaire .fullname span:last-child{
+        margin-top: 5%;
+    }
+
+    #sec_5_contact .form_container div ~ div:not(.submitBtnContainer) {
+        margin-top: 5%;
+    }
+
+    footer section:last-of-type > div {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer section {
+        width: 100%;
+    }
+
+    footer .socket {
+        display: none;
+    }
+
+    footer section:first-child{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        text-align: center;
+        background-color: #fff;
+        padding-top: 40px;
+    }
+
+    footer{
+        position: relative;
+    }
+
+    footer .slogon{
+        text-align: center;
+    }
+
+    footer section:last-child{
+        margin-bottom: 230px;
+    }
+
+
+    footer img {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    footer span.googleplay img{
+        width: 40px;
+        margin-top: -5px;
+    }
+
+    footer span.applestore img{
+        width: 35px;
+        margin-top: -7px;
+    }
+
+    footer .googleplay{
+        font-size: 15px;
+        padding: 20px 15px 20px 15px;
+        margin: 0 auto;
+    }
+
+    footer .applestore{
+        font-size: 15px;
+        padding: 20px 20px 20px 20px;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    nav.menu ul{
+        float: right;
+        margin: 0px;
+        padding: 0;
+        width: 100%;
+    }
+    
+    nav.menu {
+        float: right;
+        padding: 15px 0 0 0;
+    }
+
+    nav.menu ul li{
+        float: left;
+    
+    }
+
+    nav.menu a{
+        padding: 10px;
+        
+    }
+}
+
+
+@media screen and (min-width: 767px) {
+
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  
+    #sec_1_bienvenue h2 {
+        font-size: 60px;
+    }
+
+    .shape_1_souligne{
+        display: none;
+    }
+
+    footer .googleplay{
+        font-size: 10px;
+        padding: 20px 15px 20px 15px;
+        margin-left: 10px;
+    }
+
+    footer .applestore{
+        font-size: 10px;
+        padding: 20px 20px 20px 20px;
+        margin-left: 10px;
+    }
+    #sec_2_nouveaute figcaption{
+        font-size: 15px;
+    }
+
+    #sec_4_command figcaption p {
+        margin: 0;
+        font-size: 12px;
+        padding-top: 15px;
+    }
+}
